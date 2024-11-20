@@ -7,7 +7,7 @@ import Computation
 import plotly.express as px
 st.title("Datalysis- Platform for market data analysis")
 st.write(
-    "Under Constrcution"
+    "Under Constrcution_E1.2"
 )
 
 import pandas as pd
