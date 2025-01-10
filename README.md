@@ -1,8 +1,8 @@
-# 🎈 Blank app template
+# Datalysis- Platform for market data analysis
 
-A simple Streamlit app template for you to modify!
+Improvement your investment plan here!
 
-[![Open in Streamlit]([https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/](https://datalysis.streamlit.app/))
+[![Open in Streamlit](https://datalysis.streamlit.app/))
 
 ### How to run it on your own machine
 
