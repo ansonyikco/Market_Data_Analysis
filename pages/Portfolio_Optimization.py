@@ -7,7 +7,7 @@ import Computation
 import plotly.express as px
 st.title("Datalysis- Platform for market data analysis")
 st.write(
-    "Under Constrcution_E1.2"
+    "Under Constrcution_E1.3 @20250109"
 )
 
 import pandas as pd
@@ -18,12 +18,15 @@ with st.expander("Custom Data"):
     
     with st.form("my_form"):
         tickers = st.text_input("Tickers title", "VOO,TLT")
+        mode = st.radio('Timeframe',['Annual','Semi-Annual','Quaterly','Monthly'],horizontal=True)
         st.form_submit_button('Submit')
         
 tickers_list = tickers.split(",")
 
-df = Get_Data.Get_Data(tickers_list)
+df = Get_Data.Get_Data(tickers_list,mode)
 st.write ("\nData start from : "+str(df['Date'][0]))
+
+
 #chart_data = (pd.DataFrame(df), columns='Close/Last')
 Result = Computation.Computation(tickers_list,df)
 
